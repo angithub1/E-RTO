@@ -85,6 +85,7 @@ public class ApplicationController
 		
 		
 		return new Application();
+		}
 
 	}
 
@@ -100,11 +101,11 @@ public class ApplicationController
 		return appservice.getAppById(application_id);
 	}
 	
-	@GetMapping("/checklearningcompleted")
-	public boolean checkLearningCompleted(@RequestParam int citizen_id)
-	{
-		return appservice.checkLearningCompleted(citizen_id);		
-	}
+//	@GetMapping("/checklearningcompleted")
+//	public boolean checkLearningCompleted(@RequestParam int citizen_id)
+//	{
+//		return appservice.checkLearningCompleted(citizen_id);		
+//	}
 	
 	@GetMapping("/updatestatus")
 	public boolean updateStatus(@RequestParam int appId, @RequestParam String status)

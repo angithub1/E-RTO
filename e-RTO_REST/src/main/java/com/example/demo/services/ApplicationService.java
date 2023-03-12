@@ -70,16 +70,16 @@ public class ApplicationService
 			return null;
 	}
 	
-	public boolean checkLearningCompleted(int cid)
-	{
-		Application a= apprepo.checkLearningCompleted(cid);
-		if(a != null)
-		{
-			return true;
-		}
-		else
-			return false;
-	}
+//	public boolean checkLearningCompleted(int cid)
+//	{
+//		Application a= apprepo.checkLearningCompleted(cid);
+//		if(a != null)
+//		{
+//			return true;
+//		}
+//		else
+//			return false;
+//	}
 	
 	public Application getDocVerifiedApp(int cid)
 	{
